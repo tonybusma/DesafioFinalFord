@@ -1,0 +1,37 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Código - Vin</th>
+      <th scope="col">Odômetro</th>
+      <th scope="col">Nível de Combustível</th>
+      <th scope="col">Status</th>
+      <th scope="col">Lat.</th>
+      <th scope="col">Long.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <input type="text" class="form-control" [formControl]="vin" name="vin">
+      </td>
+        <td>
+          <b>{{ data.odometer }} Km</b>
+        </td>
+        <td>
+          <b>{{ data.fuel_level }} %</b>
+        </td>
+        <td>
+          <b>{{ data.vehicle_status }}</b>
+        </td>
+        <td>
+          <b>{{ data.latitude }}</b>
+        </td>
+        <td>
+          <b>{{ data.longitude }}</b>
+        </td>
+    </tr>
+    <tr>
+      <td class="td-foot" colspan="6"></td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,17 @@
+th{
+  color: white;
+  background-color: rgb(22, 79, 155);
+  border: 1px 1px 1px 1px;
+}
+
+table{
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  margin-right: 10px;
+
+}
+
+.td-foot{
+  background-color: rgb(22, 79, 155);
+}

@@ -1,0 +1,35 @@
+.div-title{
+  color: rgb(22, 79, 155);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  }
+
+  .card-title{
+    color: rgb(35, 97, 179);
+  }
+
+  .card-header{
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(105, 105, 105);
+    margin: 0;
+  }
+
+  .img-car{
+    width: 630px;
+    height: 260px;
+  }
+
+  .col-3{
+    height: 160px;
+    width: 210px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(105, 105, 105);
+    padding: 0;
+  }
+
+  .form-select{
+    color: rgb(105, 105, 105);
+  }

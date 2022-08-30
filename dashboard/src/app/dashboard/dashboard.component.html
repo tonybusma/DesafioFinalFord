@@ -1,0 +1,46 @@
+<div class="div-title">
+  <h2 class="main-title mb-5">Dashboard FORD</h2>
+</div>
+<div class="row align-items-center justify-content-around" *ngIf="vehicles$">
+  <div class="card col-3">
+    <div class="card-header">Veículo</div>
+    <div class="card-body">
+      <select class="form-select mt-3" [(ngModel)]="idVehicle" (ngModelChange)="selectVehicle()">
+        <option selected></option>
+        <option *ngFor="let vehicle of vehicles$" [ngValue]="vehicle.id">{{ vehicle.model }}</option>
+      </select>
+    </div>
+  </div>
+  <div class="card col-3">
+    <div class="card-header">Total de Vendas</div>
+    <div class="card-body">
+      <h4 class="card-title" >{{volTotal}}</h4>
+      <p class="card-text">Unid.</p>
+    </div>
+  </div>
+  <div class="card col-3">
+    <div class="card-header">Conectados</div>
+    <div class="card-body">
+      <h4 class="card-title">{{connected}}</h4>
+      <p class="card-text">Unid.</p>
+    </div>
+  </div>
+  <div class="card col-3">
+    <div class="card-header">Update Software</div>
+    <div class="card-body">
+      <h4 class="card-title">{{softwareUp}}</h4>
+      <p class="card-text">Unid.</p>
+    </div>
+  </div>
+</div>
+<div class="row justify-content-center align-items-center" id="img-graphic">
+  <div class="col-6">
+    <img class="img-car" src={{img}} />
+  </div>
+</div>
+<div class="col-6">
+  <google-chart></google-chart>
+</div>
+<div class="row justify-content-center align-items-center">
+  <app-table></app-table>
+</div>
